@@ -23,9 +23,8 @@ const remove_completely = typeof(REMOVE_COMPLETELY)!="undefined" ? REMOVE_COMPLE
 const white_list = JSON.parse(typeof(WHITE_LIST)!="undefined" ? WHITE_LIST
     : `[
 "qdqqd.com",
-"www.qdqqd.com",
-"tc.qdqqd.com",
-"api.qdqqd.com"
+"qpic.com",
+"qq.com"
     ]`)
 // 演示模式开启时网页上展示这段禁止滥用提示，并不需要明确表示什么时候失效，
 const demo_notice = typeof(DEMO_NOTICE)!="undefined" ? DEMO_NOTICE
