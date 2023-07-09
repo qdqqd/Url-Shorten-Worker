@@ -184,7 +184,7 @@ async function handleRequest(request) {
   console.log(path)
   if(!path){
 
-    const html= await fetch(`https://fastly.jsdelivr.net/gh/${github_repo}${github_version}/index.html`)
+    const html= await fetch(`https://fastly.jsdelivr.net/gh/${github_repo}/index.html`)
     const text = (await html.text())
         .replaceAll("###GITHUB_REPO###", github_repo)
         .replaceAll("###GITHUB_VERSION###", github_version)
