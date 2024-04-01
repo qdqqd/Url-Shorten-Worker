@@ -4,7 +4,7 @@ let res
         alert("请输入链接!")
         return
     }
-
+ 
     document.getElementById("searchbtn").disabled=true;
 	document.getElementById("searchbtn").innerHTML='<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>正在缩短...';
     fetch(window.location.pathname, {
